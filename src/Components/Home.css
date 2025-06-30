@@ -1,0 +1,233 @@
+/* ===== Reset & base ===== */
+* {
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* ===== Container for consistent width & padding ===== */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* ===== Hero Section ===== */
+  .hero {
+    position: relative;
+    min-height: 115vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    max-width: 700px;
+    z-index: 2;
+  }
+  
+  .hero-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1.75rem;
+    color: #ddd;
+  }
+  
+  /* ===== Buttons ===== */
+  .btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    background-color: #1e40af;
+    outline: none;
+  }
+  
+  /* ===== About Section ===== */
+  .about {
+    padding: 4rem 0;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    color: #555;
+  }
+  
+  /* ===== Services Section ===== */
+  .services {
+    background-color: #f3f4f6;
+    padding: 4rem 0;
+  }
+  
+  .services-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .service-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .service-card:hover,
+  .service-card:focus {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    outline: none;
+  }
+  
+  .service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  
+  .service-content {
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  /* ===== Contact Section ===== */
+  .contact {
+    background-color: #28292c;
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-text {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-btn {
+    background: white;
+    color: #2563eb;
+    padding: 0.75rem 2.25rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.125rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover,
+  .contact-btn:focus {
+    background-color: #e0e7ff;
+    outline: none;
+  }
+  
+  /* ===== Footer ===== */
+  .footer {
+    background-color: #1f2937;
+    color: #9ca3af;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* ===== Responsive ===== */
+  @media (min-width: 640px) {
+    .hero-title {
+      font-size: 3.2rem;
+    }
+    .hero-subtitle {
+      font-size: 1.4rem;
+    }
+    .service-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-title {
+      font-size: 4rem;
+    }
+    .service-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
