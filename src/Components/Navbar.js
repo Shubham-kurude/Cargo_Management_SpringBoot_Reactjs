@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
 <div className="logo" id="bttn">
-  <Link to="/">Sk Cargo & Logistics</Link>
+  <Link to="/"><img src='https://png.pngtree.com/png-vector/20220617/ourmid/pngtree-sk-letter-logo-vector-design-template-png-image_5120405.png'></img></Link>
 </div>      <div className={`nav-links ${isOpen ? 'open' : ''}`}>
       
         <Link to="/">Home</Link>
