@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import './BookedCargoList.css';
+import Navbar from "./Navbar";
 function GetBookedQoutes() {
   const [cargos, setCargos] = useState([]);
 
@@ -19,6 +20,7 @@ function GetBookedQoutes() {
 
   return (
     <div className="table-container">
+      <Navbar/>
     <div class="jumbotron">
           <h3>Booked Qouted By Customers</h3>
        </div> 

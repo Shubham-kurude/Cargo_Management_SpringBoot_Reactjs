@@ -21,10 +21,10 @@ export default function Home() {
   <h1 className="hero-title mb-2">Reliable Cargo & Freight Services</h1>
   <p className="hero-subtitle mb-2">Fast, Secure & Affordable Shipping Worldwide.</p>
   <Link to="/get-quote">
-  <button className="btn">Get a Quote</button>
-</Link><a>-----</a>
-<Link to="/getAllCargo">
-  <button className="btn">Admin Login</button>
+  <button className="" id="btnn">Get a Quote</button>
+</Link>
+<Link to="/adminlogin">
+  <button className="" id="btnn">Admin Login</button>
 </Link>
 </div>
 

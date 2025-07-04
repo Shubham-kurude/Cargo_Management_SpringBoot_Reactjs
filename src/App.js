@@ -7,6 +7,7 @@ import GetQuote from "./Components/GetQoute";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Admin_Pannel from "./Components/Admin_Pannel";
 import GetBookedQoutes from "./Components/GetBookedQoutes";
+import AdminLogin from "./Components/AdminLogin";
 
 // export default function H() {
 //   return (
@@ -34,7 +35,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/get-quote" element={<GetQuote />} />
         <Route path="/" element={<Home />} />
-        <Route path="/admin_pannel" element={<Admin_Pannel />} />
+        <Route path="/adminlogin" element={<AdminLogin />} />
         <Route path="/getAllCargo" element={< GetBookedQoutes/>} />
       </Routes>
     </div>
